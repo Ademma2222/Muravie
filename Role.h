@@ -1,47 +1,45 @@
 #pragma once
 #include <iostream>
 
-class Ant; // f
-
+class Ant;
 class Role
 {
 public:
-    virtual ~Role() {}
-    virtual void Work ( Ant * kto ) = 0;
+    virtual ~Role(){}
+    virtual void Work (Ant*kto) = 0;
 };
-
-class Nurse : public Role
+class Nurse: public Role
 {
 public:
-    void Work ( Ant * kto ) override;
+    void Work (Ant*kto) override;
 };
 
-class Soldier : public Role
+class Soldier: public Role
 {
 public:
-    void Work ( Ant * kto ) override;
+    void Work (Ant*kto) override;
 };
 
-class Shepherd : public Role
+class Shepherd: public Role
 {
 public:
-    void Work ( Ant * kto ) override;
+    void Work (Ant*kto) override;
 };
 
-class Forager : public Role
+class Forager: public Role
 {
 public:
-    void Work ( Ant * kto ) override;
+    void Work (Ant*kto) override;
 };
 
-class Builder : public Role
+class Builder: public Role
 {
 public:
-    void Work ( Ant * kto ) override;
+    void Work (Ant*kto) override;
 };
 
-class Cleaner : public Role
+class Cleaner: public Role
 {
 public:
-    void Work ( Ant * kto ) override;
+    void Work (Ant*kto) override;
 };
